@@ -1,18 +1,297 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
  <head>
+  <meta charset="utf-8"/>
   <title>
-   503 Service Temporarily Unavailable
+   User : IrisCTF 2023 - CTF fun for hackers of all skill levels
   </title>
+  <meta content="A fun, lighthearted, and educational 48-hour online CTF aimed towards hackers of all levels. Takes place the first full Friday-to-Sunday weekend every year." name="description"/>
+  <meta content="" name="author"/>
+  <meta content="/static/img/favicon.png" property="og:image">
+   <link href="/static/img/favicon.png" rel="icon" type="image/png"/>
+   <link href="/static/theme.css-v-1.3.0r5.css" rel="stylesheet"/>
+   <script src="/static/theme_min.js">
+   </script>
+  </meta>
  </head>
  <body>
-  <center>
-   <h1>
-    503 Service Temporarily Unavailable
-   </h1>
-  </center>
-  <hr/>
-  <center>
-   nginx
-  </center>
+  <div id="navbar">
+   <a href="/">
+    <img id="navbar-logo" src="/static/img/logo_navbar.png"/>
+   </a>
+   <div id="navbar-buttons">
+    <a href="/home.html">
+     Home
+    </a>
+    <a href="/challenges.html">
+     Challenges
+    </a>
+    <a href="/scoreboard.html">
+     Scoreboard
+    </a>
+    <a href="/profile.html">
+    </a>
+    <form action="/api" method="post">
+    </form>
+   </div>
+  </div>
+  <div id="body-content">
+   <div style="display:flex; margin-bottom: 16px">
+    <img src="https://www.gravatar.com/avatar/8fee74c1cec5af340bb36897f696cca1?s=256&amp;d=mp">
+     <div style="margin-left:16px">
+      <div class="pre-category-name">
+       Team:
+      </div>
+      <div class="category-name">
+       820
+      </div>
+      <div style="display:flex">
+       <div class="tag tag-inline" style="margin-right:8px">
+        <img src="/static/img/flags/jp.png" style="width:20px; height:20px; margin-right:8px"/>
+        <b>
+         Japan
+        </b>
+       </div>
+       <div class="tag tag-inline">
+        <b>
+         368 Points
+        </b>
+       </div>
+      </div>
+     </div>
+    </img>
+   </div>
+   <div class="section-header">
+    <div class="decorator-square-container" style="transform: rotate(0deg)">
+     <div class="decorator-square-component" style="background-color:#009927">
+     </div>
+     <div class="decorator-square-component title-decorator-gray">
+     </div>
+     <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/arrow.png');background-size: 16px;">
+     </div>
+    </div>
+    Solved challenges
+   </div>
+   <table>
+    <thead>
+     <tr>
+      <th style="flex-basis: 15%;">
+       Category
+      </th>
+      <th style="flex-basis: 50%;">
+       Challenge
+      </th>
+      <th style="flex-basis: 35%;">
+       Solved
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-4.html">
+        baby_rev
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="13637">
+         3 Hours, 47 Minutes
+        </span>
+        after release (solver #46)
+        <div class="tooltip-text">
+         07/01/2023 - 03:47:17 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-47.html">
+        Meaning of Python 1
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="30590">
+         8 Hours, 29 Minutes
+        </span>
+        after release (solver #56)
+        <div class="tooltip-text">
+         08/01/2023 - 08:29:45 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-3.html">
+        Web Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-8.html">
+        babystrechy
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="116790">
+         1 Day, 8 Hours
+        </span>
+        after release (solver #74)
+        <div class="tooltip-text">
+         08/01/2023 - 08:26:30 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-4.html">
+        Cryptography
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-3.html">
+        babynotrsa
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="6844">
+         1 Hour, 54 Minutes
+        </span>
+        after release (solver #18)
+        <div class="tooltip-text">
+         07/01/2023 - 01:54:04 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-4.html">
+        Cryptography
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-13.html">
+        babymixup
+       </a>
+       (68 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="9694">
+         2 Hours, 41 Minutes
+        </span>
+        after release (solver #14)
+        <div class="tooltip-text">
+         07/01/2023 - 02:41:34 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-6.html">
+        Networks
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-22.html">
+        babyshark
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="6265">
+         1 Hour, 44 Minutes
+        </span>
+        after release (solver #36)
+        <div class="tooltip-text">
+         07/01/2023 - 01:44:25 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-9.html">
+        Welcome
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-1.html">
+        Sanity Check
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="6015">
+         1 Hour, 40 Minutes
+        </span>
+        after release (solver #114)
+        <div class="tooltip-text">
+         07/01/2023 - 01:40:15 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div id="footer">
+   <b>
+    <a href="https://github.com/Milkdrop/CTFx">
+     CTFx
+    </a>
+   </b>
+   v1.3.0r5
+   <br/>
+   Made with 🧡 by
+   <a href="https://gitlab.com/Milkdrop">
+    Milkdrop
+   </a>
+   , Based on
+   <a href="https://github.com/Nakiami/mellivora">
+    mellivora
+   </a>
+  </div>
+  <audio id="audio-typewriter" src="/static/audio/typewriter.mp3">
+  </audio>
+  <audio id="audio-nav-mouseover" src="/static/audio/nav_mouseover.mp3">
+  </audio>
+  <audio id="audio-nav-click" src="/static/audio/nav_click.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-mouseover" src="/static/audio/btn_dynamic_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-click" src="/static/audio/btn_dynamic_click.mp3">
+  </audio>
+  <audio id="audio-btn-solid-mouseover" src="/static/audio/btn_solid_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-solid-click" src="/static/audio/btn_solid_click.mp3">
+  </audio>
+  <audio id="audio-checkbox-click" src="/static/audio/checkbox_click.mp3">
+  </audio>
+  <script src="/static/ctfx.js-v-1.3.0r5.js" type="text/javascript">
+  </script>
  </body>
 </html>
