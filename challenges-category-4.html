@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Challenges : IrisCTF 2023 - CTF fun for hackers of all skill levels
+  </title>
+  <meta content="A fun, lighthearted, and educational 48-hour online CTF aimed towards hackers of all levels. Takes place the first full Friday-to-Sunday weekend every year." name="description"/>
+  <meta content="" name="author"/>
+  <meta content="/static/img/favicon.png" property="og:image">
+   <link href="/static/img/favicon.png" rel="icon" type="image/png"/>
+   <link href="/static/theme.css-v-1.3.0r5.css" rel="stylesheet"/>
+   <script src="/static/theme_min.js">
+   </script>
+  </meta>
+ </head>
+ <body>
+  <div id="navbar">
+   <a href="/">
+    <img id="navbar-logo" src="/static/img/logo_navbar.png"/>
+   </a>
+   <div id="navbar-buttons">
+    <a href="/home.html">
+     Home
+    </a>
+    <a class="active" href="/challenges.html">
+     Challenges
+    </a>
+    <a href="/scoreboard.html">
+     Scoreboard
+    </a>
+    <a href="/profile.html">
+    </a>
+    <form action="/api" method="post">
+    </form>
+   </div>
+  </div>
+  <div id="body-content">
+   <div class="pre-category-name">
+    Challenge category:
+   </div>
+   <div class="category-name typewriter">
+    Cryptography
+   </div>
+   <div style="display:flex; flex-wrap:wrap">
+    <div class="decorator-square-container" style="transform: rotate(270deg)">
+     <div class="decorator-square-component" style="background-color:#009927">
+     </div>
+     <div class="decorator-square-component title-decorator-gray">
+     </div>
+     <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/arrow.png');background-size: 16px;filter:invert(1);">
+     </div>
+    </div>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Binary+Exploitation.html" style="margin:0px 8px 8px 0px">
+     Binary Exploitation
+    </a>
+    <a class="btn-solid btn-solid-warning active" href="challenges-category-Cryptography.html" style="margin:0px 8px 8px 0px">
+     Cryptography
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Forensics.html" style="margin:0px 8px 8px 0px">
+     Forensics
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Miscellaneous.html" style="margin:0px 8px 8px 0px">
+     Miscellaneous
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Networks.html" style="margin:0px 8px 8px 0px">
+     Networks
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Radio+Frequency.html" style="margin:0px 8px 8px 0px">
+     Radio Frequency
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Reverse+Engineering.html" style="margin:0px 8px 8px 0px">
+     Reverse Engineering
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Web+Exploitation.html" style="margin:0px 8px 8px 0px">
+     Web Exploitation
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Welcome.html" style="margin:0px 8px 8px 0px">
+     Welcome
+    </a>
+   </div>
+   <div style="margin-bottom: 8px">
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-3.html">
+       babynotrsa
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       50 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      Everyone knows
+      <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">
+       RSA
+      </a>
+      , but everyone also knows that RSA is slow. Why not just use a faster operation than exponentiation?
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1060551406244855868/chal.py" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         chal.py
+        </img>
+       </div>
+      </a>
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1060551406563631114/output.txt" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         output.txt
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      sera
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-13.html">
+       babymixup
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       68 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      I encrypted a public string and the flag with AES. There's no known key recovery attacks against AES, so you can't decrypt the flag.
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1056703912649949244/chal.py" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         chal.py
+        </img>
+       </div>
+      </a>
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1056703912977125477/output.txt" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px"/>
+        output.txt
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      sera
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-42.html">
+       Nonces and Keys
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       374 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      Because of our revolutionary AES-128-OFB technology we have encrypted your user data so securely that even with the key (k=0x13371337133713371337133713371337) evil hackers can't read out the passwords!!!
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1004152966510563448/1055599731277037638/challenge_enc.sqlite3" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         challenge_enc.sqlite3
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      lambda
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-43.html">
+       SMarT 1
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       442 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      I made a small, efficient block cipher. It's small because I can fit it on the page and it's efficient because it only uses the minimal amount of rounds. I didn't even try it but I'm sure it works. Here's some output with the key. Can you get the flag back out?
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1060953189366628402/output1.txt" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         output1.txt
+        </img>
+       </div>
+      </a>
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1060953188821385418/chal.py" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px"/>
+        chal.py
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      sera
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-35.html">
+       AES-BAD-256
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       485 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      I heard that some common block cipher modes have lots of footguns - using none (ECB) results in the legendary
+      <a href="https://words.filippo.io/the-ecb-penguin/">
+       ECB Penguin
+      </a>
+      , while others are vulnerable to
+      <a href="https://en.wikipedia.org/wiki/Bit-flipping_attack">
+       bit flipping
+      </a>
+      and
+      <a href="https://en.wikipedia.org/wiki/Padding_oracle_attack">
+       padding
+      </a>
+      attacks, so I made my own that would never fall to such a technique.
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <div href="nc aes.chal.irisc.tf 10100" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-danger btn-solid-link btn-solid-link-unclickable" style="margin-bottom:0px">
+        <img src="/static/img/icons/target.png" style="width:20px; height:20px; margin-right:8px">
+         nc aes.chal.irisc.tf 10100
+        </img>
+       </div>
+      </div>
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1056104546314756106/chal.py" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px"/>
+        chal.py
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      sera
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-45.html">
+       SMarT 2
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       487 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      I'm sure you'll never guess what comes next: Now do it without the key!
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1060953189098197052/output2.txt" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         output2.txt
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      sera
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <b>
+    <a href="https://github.com/Milkdrop/CTFx">
+     CTFx
+    </a>
+   </b>
+   v1.3.0r5
+   <br/>
+   Made with 🧡 by
+   <a href="https://gitlab.com/Milkdrop">
+    Milkdrop
+   </a>
+   , Based on
+   <a href="https://github.com/Nakiami/mellivora">
+    mellivora
+   </a>
+  </div>
+  <audio id="audio-typewriter" src="/static/audio/typewriter.mp3">
+  </audio>
+  <audio id="audio-nav-mouseover" src="/static/audio/nav_mouseover.mp3">
+  </audio>
+  <audio id="audio-nav-click" src="/static/audio/nav_click.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-mouseover" src="/static/audio/btn_dynamic_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-click" src="/static/audio/btn_dynamic_click.mp3">
+  </audio>
+  <audio id="audio-btn-solid-mouseover" src="/static/audio/btn_solid_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-solid-click" src="/static/audio/btn_solid_click.mp3">
+  </audio>
+  <audio id="audio-checkbox-click" src="/static/audio/checkbox_click.mp3">
+  </audio>
+  <script src="/static/ctfx.js-v-1.3.0r5.js" type="text/javascript">
+  </script>
+ </body>
+</html>

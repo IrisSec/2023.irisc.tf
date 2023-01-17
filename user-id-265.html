@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   User : IrisCTF 2023 - CTF fun for hackers of all skill levels
+  </title>
+  <meta content="A fun, lighthearted, and educational 48-hour online CTF aimed towards hackers of all levels. Takes place the first full Friday-to-Sunday weekend every year." name="description"/>
+  <meta content="" name="author"/>
+  <meta content="/static/img/favicon.png" property="og:image">
+   <link href="/static/img/favicon.png" rel="icon" type="image/png"/>
+   <link href="/static/theme.css-v-1.3.0r5.css" rel="stylesheet"/>
+   <script src="/static/theme_min.js">
+   </script>
+  </meta>
+ </head>
+ <body>
+  <div id="navbar">
+   <a href="/">
+    <img id="navbar-logo" src="/static/img/logo_navbar.png"/>
+   </a>
+   <div id="navbar-buttons">
+    <a href="/home.html">
+     Home
+    </a>
+    <a href="/challenges.html">
+     Challenges
+    </a>
+    <a href="/scoreboard.html">
+     Scoreboard
+    </a>
+    <a href="/profile.html">
+    </a>
+    <form action="/api" method="post">
+    </form>
+   </div>
+  </div>
+  <div id="body-content">
+   <div style="display:flex; margin-bottom: 16px">
+    <img src="https://www.gravatar.com/avatar/203e4cbbd17ed4c561a851f2723c2997?s=256&amp;d=mp">
+     <div style="margin-left:16px">
+      <div class="pre-category-name">
+       Team:
+      </div>
+      <div class="category-name">
+       Psi Beta Rho | UCLA
+      </div>
+      <div style="display:flex">
+       <div class="tag tag-inline" style="margin-right:8px">
+        <img src="/static/img/flags/us.png" style="width:20px; height:20px; margin-right:8px"/>
+        <b>
+         United States
+        </b>
+       </div>
+       <div class="tag tag-inline">
+        <b>
+         8493 Points
+        </b>
+       </div>
+      </div>
+     </div>
+    </img>
+   </div>
+   <div class="section-header">
+    <div class="decorator-square-container" style="transform: rotate(0deg)">
+     <div class="decorator-square-component" style="background-color:#009927">
+     </div>
+     <div class="decorator-square-component title-decorator-gray">
+     </div>
+     <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/arrow.png');background-size: 16px;">
+     </div>
+    </div>
+    Solved challenges
+   </div>
+   <table>
+    <thead>
+     <tr>
+      <th style="flex-basis: 15%;">
+       Category
+      </th>
+      <th style="flex-basis: 50%;">
+       Challenge
+      </th>
+      <th style="flex-basis: 35%;">
+       Solved
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-4.html">
+        baby_rev
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="31140">
+         8 Hours, 39 Minutes
+        </span>
+        after release (solver #92)
+        <div class="tooltip-text">
+         07/01/2023 - 08:39:00 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-23.html">
+        Scoreboard Website Easter Egg
+       </a>
+       (491 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="92793">
+         1 Day, 1 Hour
+        </span>
+        after release (solver #4)
+        <div class="tooltip-text">
+         08/01/2023 - 01:46:33 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-30.html">
+        Alien Math
+       </a>
+       (494 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="105931">
+         1 Day, 5 Hours
+        </span>
+        after release (solver #4)
+        <div class="tooltip-text">
+         08/01/2023 - 05:25:31 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-38.html">
+        Scratchtastic
+       </a>
+       (499 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="118633">
+         1 Day, 8 Hours
+        </span>
+        after release (solver #3)
+        <div class="tooltip-text">
+         08/01/2023 - 08:57:13 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-47.html">
+        Meaning of Python 1
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="23030">
+         6 Hours, 23 Minutes
+        </span>
+        after release (solver #38)
+        <div class="tooltip-text">
+         08/01/2023 - 06:23:45 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-1.html">
+        Reverse Engineering
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-48.html">
+        Meaning of Python 2
+       </a>
+       (68 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="73366">
+         20 Hours, 22 Minutes
+        </span>
+        after release (solver #47)
+        <div class="tooltip-text">
+         08/01/2023 - 20:22:45 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-2.html">
+        Binary Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-10.html">
+        babyseek
+       </a>
+       (167 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="3361">
+         56 Minutes, 1 Second
+        </span>
+        after release (solver #3)
+        <div class="tooltip-text">
+         07/01/2023 - 00:56:01 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-2.html">
+        Binary Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-16.html">
+        baby?socat
+       </a>
+       (478 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="6862">
+         1 Hour, 54 Minutes
+        </span>
+        after release (solver #2)
+        <div class="tooltip-text">
+         07/01/2023 - 01:54:22 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-2.html">
+        Binary Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-24.html">
+        Michael Bank
+       </a>
+       (494 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="53953">
+         14 Hours, 59 Minutes
+        </span>
+        after release (solver #3)
+        <div class="tooltip-text">
+         07/01/2023 - 14:59:13 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-2.html">
+        Binary Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-34.html">
+        ret2libm
+       </a>
+       (392 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="29312">
+         8 Hours, 8 Minutes
+        </span>
+        after release (solver #5)
+        <div class="tooltip-text">
+         07/01/2023 - 08:08:32 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-3.html">
+        Web Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-6.html">
+        babycsrf
+       </a>
+       (359 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="4651">
+         1 Hour, 17 Minutes
+        </span>
+        after release (solver #4)
+        <div class="tooltip-text">
+         07/01/2023 - 01:17:31 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-3.html">
+        Web Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-8.html">
+        babystrechy
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="12387">
+         3 Hours, 26 Minutes
+        </span>
+        after release (solver #6)
+        <div class="tooltip-text">
+         07/01/2023 - 03:26:27 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-3.html">
+        Web Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-25.html">
+        MyCoolSDK
+       </a>
+       (500 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="172081">
+         1 Day, 23 Hours
+        </span>
+        after release (solver #2)
+        <div class="tooltip-text">
+         08/01/2023 - 23:48:01 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-3.html">
+        Web Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-26.html">
+        Feeling Tagged
+       </a>
+       (497 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="163174">
+         1 Day, 21 Hours
+        </span>
+        after release (solver #7)
+        <div class="tooltip-text">
+         08/01/2023 - 21:19:34 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-3.html">
+        Web Exploitation
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-33.html">
+        metacalc
+       </a>
+       (498 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="11914">
+         3 Hours, 18 Minutes
+        </span>
+        after release (solver #1)
+        <div class="tooltip-text">
+         07/01/2023 - 03:18:34 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-4.html">
+        Cryptography
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-3.html">
+        babynotrsa
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="13822">
+         3 Hours, 50 Minutes
+        </span>
+        after release (solver #32)
+        <div class="tooltip-text">
+         07/01/2023 - 03:50:22 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-4.html">
+        Cryptography
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-13.html">
+        babymixup
+       </a>
+       (68 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="14445">
+         4 Hours, 0 Minutes
+        </span>
+        after release (solver #16)
+        <div class="tooltip-text">
+         07/01/2023 - 04:00:45 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-4.html">
+        Cryptography
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-42.html">
+        Nonces and Keys
+       </a>
+       (374 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="15970">
+         4 Hours, 26 Minutes
+        </span>
+        after release (solver #11)
+        <div class="tooltip-text">
+         07/01/2023 - 04:26:10 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-4.html">
+        Cryptography
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-43.html">
+        SMarT 1
+       </a>
+       (442 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="44482">
+         12 Hours, 21 Minutes
+        </span>
+        after release (solver #11)
+        <div class="tooltip-text">
+         07/01/2023 - 12:21:22 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-6.html">
+        Networks
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-22.html">
+        babyshark
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="11200">
+         3 Hours, 6 Minutes
+        </span>
+        after release (solver #53)
+        <div class="tooltip-text">
+         07/01/2023 - 03:06:40 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-6.html">
+        Networks
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-37.html">
+        wi-the-fi
+       </a>
+       (247 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="102431">
+         1 Day, 4 Hours
+        </span>
+        after release (solver #42)
+        <div class="tooltip-text">
+         08/01/2023 - 04:27:11 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-7.html">
+        Forensics
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-32.html">
+        babyforens
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="22780">
+         6 Hours, 19 Minutes
+        </span>
+        after release (solver #10)
+        <div class="tooltip-text">
+         07/01/2023 - 06:19:40 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-7.html">
+        Forensics
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-46.html">
+        Michaelcord
+       </a>
+       (495 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="35962">
+         9 Hours, 59 Minutes
+        </span>
+        after release (solver #5)
+        <div class="tooltip-text">
+         08/01/2023 - 10:00:17 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-8.html">
+        Miscellaneous
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-5.html">
+        Host Issues
+       </a>
+       (482 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="18134">
+         5 Hours, 2 Minutes
+        </span>
+        after release (solver #4)
+        <div class="tooltip-text">
+         07/01/2023 - 05:02:14 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-8.html">
+        Miscellaneous
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-7.html">
+        Nameless
+       </a>
+       (498 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="14937">
+         4 Hours, 8 Minutes
+        </span>
+        after release (solver #1)
+        <div class="tooltip-text">
+         07/01/2023 - 04:08:57 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-8.html">
+        Miscellaneous
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-12.html">
+        Example Jail
+       </a>
+       (500 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="17697">
+         4 Hours, 54 Minutes
+        </span>
+        after release (solver #2)
+        <div class="tooltip-text">
+         07/01/2023 - 04:54:57 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-9.html">
+        Welcome
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-1.html">
+        Sanity Check
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="14">
+         14 Seconds
+        </span>
+        after release (solver #7)
+        <div class="tooltip-text">
+         07/01/2023 - 00:00:14 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-9.html">
+        Welcome
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-2.html">
+        Discord
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="59">
+         59 Seconds
+        </span>
+        after release (solver #2)
+        <div class="tooltip-text">
+         07/01/2023 - 00:00:59 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+     <tr>
+      <td style="flex-basis: 15%;">
+       <a href="/challenges-category-9.html">
+        Welcome
+       </a>
+      </td>
+      <td style="flex-basis: 50%;">
+       <a href="/challenge-id-49.html">
+        Exit Survey
+       </a>
+       (50 Points)
+      </td>
+      <td style="flex-basis: 35%;">
+       <span class="tooltip" style="">
+        <span time-difference="9515">
+         2 Hours, 38 Minutes
+        </span>
+        after release (solver #79)
+        <div class="tooltip-text">
+         08/01/2023 - 18:46:56 UTC+0
+        </div>
+       </span>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div id="footer">
+   <b>
+    <a href="https://github.com/Milkdrop/CTFx">
+     CTFx
+    </a>
+   </b>
+   v1.3.0r5
+   <br/>
+   Made with 🧡 by
+   <a href="https://gitlab.com/Milkdrop">
+    Milkdrop
+   </a>
+   , Based on
+   <a href="https://github.com/Nakiami/mellivora">
+    mellivora
+   </a>
+  </div>
+  <audio id="audio-typewriter" src="/static/audio/typewriter.mp3">
+  </audio>
+  <audio id="audio-nav-mouseover" src="/static/audio/nav_mouseover.mp3">
+  </audio>
+  <audio id="audio-nav-click" src="/static/audio/nav_click.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-mouseover" src="/static/audio/btn_dynamic_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-click" src="/static/audio/btn_dynamic_click.mp3">
+  </audio>
+  <audio id="audio-btn-solid-mouseover" src="/static/audio/btn_solid_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-solid-click" src="/static/audio/btn_solid_click.mp3">
+  </audio>
+  <audio id="audio-checkbox-click" src="/static/audio/checkbox_click.mp3">
+  </audio>
+  <script src="/static/ctfx.js-v-1.3.0r5.js" type="text/javascript">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Challenges : IrisCTF 2023 - CTF fun for hackers of all skill levels
+  </title>
+  <meta content="A fun, lighthearted, and educational 48-hour online CTF aimed towards hackers of all levels. Takes place the first full Friday-to-Sunday weekend every year." name="description"/>
+  <meta content="" name="author"/>
+  <meta content="/static/img/favicon.png" property="og:image">
+   <link href="/static/img/favicon.png" rel="icon" type="image/png"/>
+   <link href="/static/theme.css-v-1.3.0r5.css" rel="stylesheet"/>
+   <script src="/static/theme_min.js">
+   </script>
+  </meta>
+ </head>
+ <body>
+  <div id="navbar">
+   <a href="/">
+    <img id="navbar-logo" src="/static/img/logo_navbar.png"/>
+   </a>
+   <div id="navbar-buttons">
+    <a href="/home.html">
+     Home
+    </a>
+    <a class="active" href="/challenges.html">
+     Challenges
+    </a>
+    <a href="/scoreboard.html">
+     Scoreboard
+    </a>
+    <a href="/profile.html">
+    </a>
+    <form action="/api" method="post">
+    </form>
+   </div>
+  </div>
+  <div id="body-content">
+   <div class="pre-category-name">
+    Challenge category:
+   </div>
+   <div class="category-name typewriter">
+    Radio Frequency
+   </div>
+   <div style="display:flex; flex-wrap:wrap">
+    <div class="decorator-square-container" style="transform: rotate(270deg)">
+     <div class="decorator-square-component" style="background-color:#009927">
+     </div>
+     <div class="decorator-square-component title-decorator-gray">
+     </div>
+     <div class="decorator-square-component decorator-square-icon" style="background-image: url('/static/img/icons/arrow.png');background-size: 16px;filter:invert(1);">
+     </div>
+    </div>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Binary+Exploitation.html" style="margin:0px 8px 8px 0px">
+     Binary Exploitation
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Cryptography.html" style="margin:0px 8px 8px 0px">
+     Cryptography
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Forensics.html" style="margin:0px 8px 8px 0px">
+     Forensics
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Miscellaneous.html" style="margin:0px 8px 8px 0px">
+     Miscellaneous
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Networks.html" style="margin:0px 8px 8px 0px">
+     Networks
+    </a>
+    <a class="btn-solid btn-solid-warning active" href="challenges-category-Radio+Frequency.html" style="margin:0px 8px 8px 0px">
+     Radio Frequency
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Reverse+Engineering.html" style="margin:0px 8px 8px 0px">
+     Reverse Engineering
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Web+Exploitation.html" style="margin:0px 8px 8px 0px">
+     Web Exploitation
+    </a>
+    <a class="btn-solid btn-solid-warning" href="challenges-category-Welcome.html" style="margin:0px 8px 8px 0px">
+     Welcome
+    </a>
+   </div>
+   <div style="margin-bottom: 8px">
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-14.html">
+       babyrf 1
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       496 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      Welcome to the world of radio frequency! Before we give you real-life raw I/Q files and let you start hacking protocols, let's make sure you understand and can show basic competency in the fundamentals.
+     </p>
+     <p>
+     </p>
+     <p>
+      Note: challenges in this category are gated. Completion of babyrf 1 will unlock babyrf 2, and completion of babyrf 2 will unlock all the challenges in the RF category.
+     </p>
+     <p>
+     </p>
+     <p>
+      --- Hint ---
+     </p>
+     <p>
+      If you're still struggling with babyrf1 and begging for a sine,
+     </p>
+     <p>
+      Look at the data you've unpickled and then you'll be fine.
+     </p>
+     <p>
+      Digital cannot capture infinitely as much as analog a point,
+     </p>
+     <p>
+      So instead we have many samples discretely disjoint.
+     </p>
+     <p>
+      But one should look to see if they can recover analog waves that be
+     </p>
+     <p>
+      And once you find out then you'll realize how easy this challenge is to see.
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1057165461269262426/samples.zip" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         samples.zip
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+      <div class="tag tag-inline">
+       <img src="/static/img/icons/info.png" style="width:20px; height:20px; margin-right:8px">
+        <b style="margin-right:8px">
+         Hint!
+        </b>
+        <p>
+         The given data is pickled. This is not a part of the challenge. This is the standard way to marshall data in Python. You should unmarshall the data in the pickles.
+         <a href="https://docs.python.org/3/library/pickle.html">
+          https://docs.python.org/3/library/pickle.html
+         </a>
+        </p>
+       </img>
+      </div>
+      <div class="tag tag-inline">
+       <img src="/static/img/icons/info.png" style="width:20px; height:20px; margin-right:8px"/>
+       <b style="margin-right:8px">
+        Hint!
+       </b>
+       <p>
+        Please do not play the pickle in VLC.
+       </p>
+      </div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      skat
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-15.html">
+       babyrf 2
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       499 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      Great job with babyrf 1! But what do we do if we have a really long string of 1s or a really long string of 0s? What kind of problem do we run into, and what kinds of solutions are there?
+     </p>
+     <p>
+     </p>
+     <p>
+      Note: challenges in this category are gated. Completion of babyrf 2 will unlock all the challenges in the RF category.
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1057239039981396018/samples.zip" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         samples.zip
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+      <div class="tag tag-inline">
+       <img src="/static/img/icons/info.png" style="width:20px; height:20px; margin-right:8px"/>
+       <b style="margin-right:8px">
+        Hint!
+       </b>
+       <p>
+        Once you finish babyrf1, you can very easily finish babyrf2 building off of that same codebase.
+       </p>
+      </div>
+      <div class="tag tag-inline">
+       <img src="/static/img/icons/info.png" style="width:20px; height:20px; margin-right:8px"/>
+       <b style="margin-right:8px">
+        Hint!
+       </b>
+       <p>
+        If I sent a really long string of 0s via radio... I would have no idea how many 0s I actually sent! I wonder if there's some way to solve this without needing an additional clock signal, almost like a signal that could clock itself.
+       </p>
+      </div>
+      <div class="tag tag-inline">
+       <img src="/static/img/icons/info.png" style="width:20px; height:20px; margin-right:8px"/>
+       <b style="margin-right:8px">
+        Hint!
+       </b>
+       <p>
+        Part 2's encoding scheme is a very standard scheme first created by IBM in 1956 by Bryon E. Phelps. It is not inherently self-clocking, but probabilistically achieves the same solution at lower precisions.
+       </p>
+      </div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      skat
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-20.html">
+       babyrealrf
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       500 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      Great job completing those babyrf challenges earlier. Now, we're moving from the theoretical domain into the real world! Let's get you started with real world RF.
+     </p>
+     <p>
+     </p>
+     <p>
+      My buddy sent me this file the other day of some signals he recorded. We think it holds the flag, but we're not sure what kind of file this is, nor do we have any idea how to open it! Do you think you could get the flag for us?
+     </p>
+     <p>
+     </p>
+     <p>
+      <strong>
+       Important: do not attempt to retransmit any given transmissions unless you know what you are doing. Always check your local laws and legislations before you transmit. In the United States, unauthorized transmission outside of certain frequency bands is illegal and can even be considered a felony offense in some cases. Radio frequency is cool, but don't get in trouble!
+      </strong>
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1057626996030578749/sample.zip" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         sample.zip
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+      <div class="tag tag-inline">
+       <img src="/static/img/icons/info.png" style="width:20px; height:20px; margin-right:8px"/>
+       <b style="margin-right:8px">
+        Hint!
+       </b>
+       <p>
+        Try learning tools that real radio hackers use. There are 2 major ones that we all use!
+       </p>
+      </div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      skat
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-21.html">
+       monke
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       500 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      Dog goes woof, cat goes meow, bird goes tweet, and mouse goes squeak. Cow goes moo, frog goes croak, and the elephant goes toot. Ducks say quack, and fish go blub, and the seal goes ow ow ow! But there's one sound that no one knows.
+     </p>
+     <p>
+     </p>
+     <p>
+      What does the monkey say?
+     </p>
+     <p>
+     </p>
+     <p>
+      <strong>
+       Important: do not attempt to retransmit any given transmissions unless you know what you are doing. Always check your local laws and legislations before you transmit. In the United States, unauthorized transmission outside of certain frequency bands is illegal and can even be considered a felony offense in some cases. Radio frequency is cool, but don't get in trouble!
+      </strong>
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1057872047570698273/sample.zip" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         sample.zip
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      skat
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-27.html">
+       backpack
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       500 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      Sometimes I go around with a radio in my backpack and just see what I pick up.
+     </p>
+     <p>
+     </p>
+     <p>
+      Once you recover the message, wrap it with
+      <code>
+       irisctf{}
+      </code>
+      before submitting the flag.
+     </p>
+     <p>
+     </p>
+     <p>
+      <strong>
+       Important: do not attempt to retransmit any given transmissions unless you know what you are doing. Always check your local laws and legislations before you transmit. In the United States, unauthorized transmission outside of certain frequency bands is illegal and can even be considered a felony offense in some cases. Radio frequency is cool, but don't get in trouble!
+      </strong>
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1059717400989286401/sample.zip" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         sample.zip
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      skat
+     </div>
+    </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+     <div style="display:flex">
+      <a href="challenge-id-29.html">
+       Here In My Garage
+      </a>
+      <div class="challenge-points">
+       <img src="/static/img/icons/flag.png"/>
+       500 Points
+      </div>
+     </div>
+     <small>
+     </small>
+    </div>
+    <div class="card-content">
+     <p>
+      My arch-nemesis, Billy Bob Bobertson, just moved into a new house. I'm still upset at him for stealing my Pringles all those years ago -- my delicious lemon, cheese, and garlic Pringles! Let's break into Billy Bob Bobertson's house and steal his new Lamborghini parked in his garage. I hear they're a lot of fun to drive in the Hollywood hills.
+     </p>
+     <p>
+     </p>
+     <p>
+      I planted a secret radio receiver near his house and picked up some signals from when he parks in the garage. Unfortunately, it looks like the RF-based access mechanism he uses uses non-static codes, so I can't just replay a captured signal (unless I were to rolljam it, of course). There must be some way to break in!
+     </p>
+     <p>
+     </p>
+     <p>
+      Note: this challenge was set up using the unlicensed frequency spectrum. This is a resource shared by all. There may be other transmissions unrelated to the challenge due to other devices using the medium when these samples were recorded.
+     </p>
+     <p>
+     </p>
+     <p>
+      The flag format for this challenge is the sequence of bits required to be transmitted in order to
+      <em>
+       open
+      </em>
+      the garage. If there is a preamble, do not include it. If there are any frame header/trailer bits, do not include them. You may assume these bits will be retransmitted on the same frequency using the same modulation mechanism. If there are multiple correct answers, submit only the first. Wrap your answer with
+      <code>
+       irisctf{}
+      </code>
+      .
+     </p>
+     <p>
+     </p>
+     <p>
+      <strong>
+       Important: do not attempt to retransmit any given transmissions unless you know what you are doing. Always check your local laws and legislations before you transmit. In the United States, unauthorized transmission outside of certain frequency bands is illegal and can even be considered a felony offense in some cases. Radio frequency is cool, but don't get in trouble!
+      </strong>
+     </p>
+     <div style="margin-top:8px; display:flex; flex-wrap: wrap">
+      <a href="https://cdn.discordapp.com/attachments/1056103369695047750/1059761956732551188/samples.zip" style="text-decoration:none; margin-right:8px; margin-bottom:8px" target="_blank">
+       <div class="tag tag-inline btn-solid btn-solid-link" style="margin-bottom:0px">
+        <img src="/static/img/icons/package.png" style="width:20px; height:20px; margin-right:8px">
+         samples.zip
+        </img>
+       </div>
+      </a>
+     </div>
+     <div>
+     </div>
+     <div class="tag tag-inline" style="margin-bottom:0px">
+      <img src="/static/img/icons/user.png" style="width:20px; height:20px; margin-right:8px"/>
+      <b style="margin-right:8px">
+       By:
+      </b>
+      skat
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="footer">
+   <b>
+    <a href="https://github.com/Milkdrop/CTFx">
+     CTFx
+    </a>
+   </b>
+   v1.3.0r5
+   <br/>
+   Made with 🧡 by
+   <a href="https://gitlab.com/Milkdrop">
+    Milkdrop
+   </a>
+   , Based on
+   <a href="https://github.com/Nakiami/mellivora">
+    mellivora
+   </a>
+  </div>
+  <audio id="audio-typewriter" src="/static/audio/typewriter.mp3">
+  </audio>
+  <audio id="audio-nav-mouseover" src="/static/audio/nav_mouseover.mp3">
+  </audio>
+  <audio id="audio-nav-click" src="/static/audio/nav_click.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-mouseover" src="/static/audio/btn_dynamic_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-dynamic-click" src="/static/audio/btn_dynamic_click.mp3">
+  </audio>
+  <audio id="audio-btn-solid-mouseover" src="/static/audio/btn_solid_mouseover.mp3">
+  </audio>
+  <audio id="audio-btn-solid-click" src="/static/audio/btn_solid_click.mp3">
+  </audio>
+  <audio id="audio-checkbox-click" src="/static/audio/checkbox_click.mp3">
+  </audio>
+  <script src="/static/ctfx.js-v-1.3.0r5.js" type="text/javascript">
+  </script>
+ </body>
+</html>
